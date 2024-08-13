@@ -82,26 +82,3 @@
   * The coefficients of the segmented cylinder
   * The second last array: the pose of the center of the cylinder in camera coordinates
   * The last array: the target gripping pose in robot arm coordinates
-
-## Setting up ROS node
-* Make the ROS package
-  ```
-  cd ros_ws
-  catkin_make
-  ```
-* Run the server node with `roslaunch`
-  ```
-  source devel/setup.bash
-  roslaunch stereovision server.launch
-  ```
-* Run the demo client (in another terminal)
-  * Make sure the robot arm controller is running
-  ```
-  source devel/setup.bash
-  rosrun stereovision client_vial_gripping_demo.py
-  ```
-  * It demostrates dynamic vial localization and gripping
-  * In a run:
-    * Makes a request to the server node and call the *operator* as done from plain script
-    * Trigger robot movements via preset path relative to given dynamic pose 
-      so that the vial on the vial stand can be gripped

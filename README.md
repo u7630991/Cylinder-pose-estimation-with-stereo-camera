@@ -1,4 +1,4 @@
-# Cylinder localization using Stereo camera and phase-shift pattern projection
+# Cylinder localization and pose estimation using Stereo camera
 
 ## Overview
 * Estimate the pose of the center of a cylinder in the base frame coordinates of the robot arm
